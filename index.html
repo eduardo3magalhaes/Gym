@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="skip-to-content" href="#main">Skip to content</a>
+    <header class="header">
+       <div class="container">
+           <h1 class="header__logo">
+               <span class="sr-only">Contorno 360</span>
+               <a href="/" aria-label="Zoo 365 logo"><img src="img/logo.svg" alt="logo" width="43" height="32"></a>
+           </h1>
+           <div class="header__menu">
+
+              <!-- inicio navegaçao Mobile -->
+              <button class="button" id="mobileMenuBtn" aria-Label="Toggle Menu" aria-expanded="false" aria-controls="mobileMenu">
+                  <img src="img/menu.svg" alt="mobile Menu" width="16" height="11">
+
+              </button>
+              <!-- fim navegaçao Mobile -->
+
+              <!-- inicio navegaçao Desktop -->
+              <nav class="desktop-menu">
+                  <h1 class="sr-only" >Main Navigation</h1>
+
+                  <ul>
+                      <li><a href="#" class="desktop-menu__link active">Home</a></li>
+                      <li><a href="#" class="desktop-menu__link">Sobre</a></li>
+                      <li><a href="#" class="desktop-menu__link">Loja</a></li>
+                      <li><a href="#" class="desktop-menu__link">Galeria</a></li>
+                      <li><a href="#" class="desktop-menu__link">Contato</a></li>
+                  </ul>
+              </nav>
+              <!-- Fim navegaçao Desktop -->
+              
+
+           </div>
+
+       </div>
+
+    </header>
+
+<!-- inicio navegaçao Mobile -->
+<nav class="mobile-menu " id="mobileMenu">
+    <h1 class="sr-only" >Main Navigation</h1>
+    <button class="button mobile-nav-close"></button> 
+    <ul>
+        <li><a href="#" class="mobile-menu__link active">Home</a></li>
+        <li><a href="#" class="mobile-menu__link">Sobre</a></li>
+        <li><a href="#" class="mobile-menu__link">Loja</a></li>
+        <li><a href="#" class="mobile-menu__link">Galeria</a></li>
+        <li><a href="#" class="mobile-menu__link">Contato</a></li>
+    </ul>
+</nav>
+
+<!-- Fim navegaçao Mobile -->
+<main>
+    <section class="hero">
+        <div class="hero__image">
+            <img src="img/hero.jpg" alt="Lifting heavy!" loading="lazy" width="1920" height="1074">
+        </div>
+        <div class="container hero__container">
+            <div class="hero-wrapper" id="main">
+                <h1 class="hero-wrapper__heading">Faça deste ano<span>o seu ano</span>!</h1>
+                <p class="hero-wrapper__body">
+                    Defina seus limites e persiga suas metas de condicionamento físico com acesso total tendo o Gym-Pass!
+                </p>
+                <a href="#" class="button button--primary" aria-label="Find out more">Descubra mais</a>
+            </div>
+            <a href="#scrolldown" class="hero__scrollbtn">
+                SCROLL <img src="img/arrow-down.svg" alt="down" width="24" height="15" loading="lazy">
+            </a>
+        </div>
+
+    </section>
+
+    <section class="categories pt-1" id="scrolldown">
+        <h1 class="sr-only">Training Categories</h1>
+        <div class="container training">
+          <a href="#" class="training__card training__card--square">
+              <h3 class="training__card-title">Treinamento Especializado</h3>
+              <div class="image-overlay"></div>
+              <div class="training__image">
+                  <img src="img/expert-coaching.jpg" alt="treinamento especializado" width="536" height="559" loading="lazy">
+              </div>
+          </a>
+        </div>
+
+    </section>
+
+
+
+</main>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
