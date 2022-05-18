@@ -102,7 +102,8 @@ p {
   padding: 0 20px;
 }
 
-/*Componentes*/
+/*Componentes
+===============*/
 .button {
   position: relative;
   display: -webkit-inline-box;
@@ -139,7 +140,8 @@ p {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-/*header section*/
+/*header section
+=================*/
 .header {
   position: absolute;
   top: 0;
@@ -175,7 +177,8 @@ p {
   }
 }
 
-/*Desktop menu*/
+/*Desktop menu
+==============*/
 .desktop-menu {
   display: none;
 }
@@ -209,7 +212,8 @@ p {
   }
 }
 
-/*mobile menu*/
+/*mobile menu
+==============*/
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -267,7 +271,8 @@ p {
   width: 100%;
 }
 
-/* hero section*/
+/* hero section
+==============*/
 .hero {
   height: 100vh;
   position: relative;
@@ -346,7 +351,8 @@ p {
   margin-top: 1rem;
 }
 
-/* Hero wrapper*/
+/* Hero wrapper
+============*/
 .hero-wrapper__heading {
   max-width: 800px;
   margin: 0 auto 4rem auto;
@@ -357,5 +363,177 @@ p {
 .hero-wrapper__body {
   max-width: 500px;
   margin: 0 auto 3rem auto;
+}
+
+/* categories training 
+==================*/
+.training {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .training {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.training__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  min-height: 550px;
+  padding: 20px 10px;
+}
+
+.training__card-title {
+  font-size: 3rem;
+  z-index: 2;
+  text-align: center;
+}
+
+.training__card-body {
+  z-index: 2;
+  text-align: center;
+}
+
+.training__card--end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.training__card--square {
+  aspect-ratio: 1 / 1;
+  min-height: auto;
+}
+
+.training__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.training__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.training .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.training .image-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Training options - training
+======================*/
+.training-options__body {
+  max-width: 810px;
+  margin: 0 auto;
+}
+
+/* Get started
+======================*/
+.get-started {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.get-started::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 140px;
+  background: #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+}
+
+.get-started::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 140px;
+  background: #000;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 10%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+}
+
+.get-started .overLay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+.get-started .container {
+  text-align: center;
+  z-index: 1;
+}
+
+.get-started-img1 {
+  background-image: url("../img/get-started.jpg");
+}
+
+.get-started-img1 .overlay {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#4b0000));
+  background: linear-gradient(#000 0%, #4b0000 100%);
+}
+
+.get-started-img2 {
+  background-image: url("../img/we-will-help.jpg");
+}
+
+.get-started-img2 .overlay {
+  background: rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=main.css.map */
